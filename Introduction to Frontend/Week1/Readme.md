@@ -33,3 +33,11 @@
 #### How Web Browser works
 * Web browser always have a status bar, in that we have to enter the address which contains protocol name, domain name and file path.
 * Then this address is carried by the specified protocol to the respective server and give back the response.
+
+![Address Image](./image.png)
+#### Web Hosting
+1. Shared hosting
+2. Virtual Private Hosting
+3. Dedicated Hosting
+4. Cloud Hosting
+* Web hosting is a service which was managed by some companies server, where we can take rent some spaces and store our websites and files.
