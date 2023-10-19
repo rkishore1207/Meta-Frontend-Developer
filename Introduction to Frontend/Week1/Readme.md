@@ -1,5 +1,5 @@
 # Introduction to Frontend Development
-* Javascript is the **powerhouse** of Frontend
+* Javascript is the **powerhouse** of Frontend and has the ability to manipulate the content of the page.
 * Because of its,
     1. Versatilities
     2. Libraries
@@ -26,3 +26,7 @@
 * It can store everything in their datacenter by a physical manner and the program that runs on the hardware is the software.
 * Webserver also do request response cycle that is, it accepts the request from the client and give response back to the client.
 * It will also manage multiple requests from the clients.
+#### Websites and WebPages
+* Webpages are page that shows texts,images,vidoes and some contents to the user whereas websites contains collection of webpages that are linked together.
+* **Building** is like HTML and the interior and exterior **decorations** are like CSS and the people and **business** going on the building is like JavaScript.
+* Which are the languages that made up of **angle brackets** (<>) that come under Markup language.
