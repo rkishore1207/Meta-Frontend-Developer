@@ -18,3 +18,11 @@
 8. Take breaks 
 #### How web works?
 &emsp; If one computer is connected to another computer, then there is no issue, what if at a time lot of computer is making request. So to eliminate the problem there is a inter connected networks that helps to connect through the computer via wired or wireless connections and helps to route to respective system. That network also connected to lot networks. This is called **INTERNET**.
+#### Web Server
+* Website Storage and Administration
+* Data Storage
+* Security
+* Managing Email
+* It can store everything in their datacenter by a physical manner and the program that runs on the hardware is the software.
+* Webserver also do request response cycle that is, it accepts the request from the client and give response back to the client.
+* It will also manage multiple requests from the clients.
