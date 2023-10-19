@@ -30,3 +30,6 @@
 * Webpages are page that shows texts,images,vidoes and some contents to the user whereas websites contains collection of webpages that are linked together.
 * **Building** is like HTML and the interior and exterior **decorations** are like CSS and the people and **business** going on the building is like JavaScript.
 * Which are the languages that made up of **angle brackets** (<>) that come under Markup language.
+#### How Web Browser works
+* Web browser always have a status bar, in that we have to enter the address which contains protocol name, domain name and file path.
+* Then this address is carried by the specified protocol to the respective server and give back the response.
