@@ -41,3 +41,16 @@
 3. Dedicated Hosting
 4. Cloud Hosting
 * Web hosting is a service which was managed by some companies server, where we can take rent some spaces and store our websites and files.
+#### Internet protocol (IP address)
+* It is the unique address that every computer has and data are transmitted through this and it is same to the postal address.
+* Ipv4 version 4 is -> **192.0.2.168**
+* Ipv6 eight groups of hexadecimal digits separated by **colons**
+* Data are transmitted through internet by **Ip Packets or Data grams**.
+* Ip packets have Ip header and payload. Header have source and destination address and payload have data to be transmit.
+* Here there is a case of,
+    1. IP packets arrive out of order
+    2. Became damaged or corrupted
+    3. Dropped or lost
+* To resolve this, the payload of packets have two additional protocols are TCP (Transmission control protocol) and UDP (User Datagram Protocol).
+* TCP is for to send the **data stream in order**, it usually sends text and images whereas UDP helps **do not lost data** and it for voice and live video streams.
+
