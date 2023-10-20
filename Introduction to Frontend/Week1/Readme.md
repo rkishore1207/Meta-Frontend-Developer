@@ -56,17 +56,34 @@
 #### Hyper Text Transfer Protocol (HTTP)
 * It have method, path and header
 ```
-        #Method
-        GET/HTTP/1.1
-        #header
-        Host: developer.mozilla.org
-        Accept-language:en
+    #Request line -> consists of METHOD, resource requested and version
+    GET/HTTP/1.1
+    #header
+    Host: developer.mozilla.org
+    Accept-language:en
 ```
+
+* Request headers are,
+1. **Host** -> specify Host of the server that is client name
+2. **User-Agnet** -> Mostly it the OS and browser
+3. **Accept** -> what type of content that client should be accept
+4. **Accept-Language** -> what type of language that client should be accept
+5. **Content-type** -> which data format could be transmitted
+* After the Request header there is a request body and it mainly for **POST** and **PUT**
+
 * Http response
 ![Http response](./Images/http.png)
+1. First line is the **Status line** which consists of Version and status code with phrase.
+2. Response Headers are,
+    * **Date** -> specify date and time
+    * **Server** -> which web server software was generated the response
+    * **Content-Length** -> length of the response
+    * **Content-Type** -> media type of the resource returned (html,video)
 #### Status codes
 * Informational -> 100-199 => indicate to continue or ingnore the response if it is already processed.
 * Successfull -> 200-299 
 * Redirection -> 300-399 => indicate the request is moved somewhere else
 * Client error -> 400-499 
 * Server error -> 500-599
+-----------------------------------------------
+* Websites are informative whereas webapplications are interactive, for example company - website and ordering - applications.
