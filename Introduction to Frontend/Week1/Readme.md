@@ -53,4 +53,20 @@
     3. Dropped or lost
 * To resolve this, the payload of packets have two additional protocols are TCP (Transmission control protocol) and UDP (User Datagram Protocol).
 * TCP is for to send the **data stream in order**, it usually sends text and images whereas UDP helps **do not lost data** and it for voice and live video streams.
-
+#### Hyper Text Transfer Protocol (HTTP)
+* It have method, path and header
+```
+        #Method
+        GET/HTTP/1.1
+        #header
+        Host: developer.mozilla.org
+        Accept-language:en
+```
+* Http response
+![Http response](./Images/http.png)
+#### Status codes
+* Informational -> 100-199 => indicate to continue or ingnore the response if it is already processed.
+* Successfull -> 200-299 
+* Redirection -> 300-399 => indicate the request is moved somewhere else
+* Client error -> 400-499 
+* Server error -> 500-599
