@@ -87,3 +87,10 @@
 * Server error -> 500-599
 -----------------------------------------------
 * Websites are informative whereas webapplications are interactive, for example company - website and ordering - applications.
+#### Libraries and Frameworks
+* **Open-Source** -> it is a public code which everyone can modify by their wish and use wherever they want.
+* Libraries are **pre-built code** do to specific funtionality and we can **re-use** it in out code and it is like carpenter using **hammer** as library for manufacture the chair.
+* So with the help of Libraries, developers can **save the time** and utilize that time for developing purpose.
+* Framework is create **structure** for development and it can handle http request and give back response. Eg.,ASP.NET.
+![Advantages Disadvantages](./Images/libraries%20and%20frameworks.png)
+* RESTful -> Representational State Transfer api.
