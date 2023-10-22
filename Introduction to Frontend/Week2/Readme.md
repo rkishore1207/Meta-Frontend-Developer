@@ -16,3 +16,7 @@
     </body>
 </html>
 ```
+#### HTML forms
+* form having **action** and **method** attribute in it, action is to specify the **path** and method is to specify which method it is POST or GET.
+* Label the input tags are connected through `for` in label and `name` in input tag.
+* All the `elements` in the html document is referred to `objects` in the DOM.
