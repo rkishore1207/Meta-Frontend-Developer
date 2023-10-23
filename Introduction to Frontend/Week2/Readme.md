@@ -71,4 +71,12 @@ p.introduction {
 <br>
 
 &emsp; Here blue color applies only to the `h1` **has Latest News** not all the h1 elements inside blog just the immediate child.
+
 7. :hover Pseudo-Class
+
+### Box Model in CSS
+![Box Model](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/de12269e-d119-4805-bb8c-077ffa2a4656)
+
+* Padding width is calculated by adding content width + padding left and padding right.
+* Border width is calculated by adding padding width + border left and right.
+* Margin height is calculated by adding border height + margin top and bottom.
