@@ -16,3 +16,5 @@
 * If we want to deploy our application into server we need to bundle it that is combine all the dependencies into **single bundle**, the tool used to bundle up are **Webpack** or **gulp**.
 #### Responsive design
 * Usual laptop width is `1920px` and height is `1080px`.
+* Responsiveness is achieved by three things are Flexible grids, Fluid images and Media queries.
+* 
