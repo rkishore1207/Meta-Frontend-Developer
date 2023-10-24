@@ -42,3 +42,5 @@
 * Once the react components are changed, 1st it will compares it with `previous version` of virtual DOM and updates that particular components only.
 * And that virtual DOM compares with the `website DOM` and updates the changed components only.
 * This process is called **Reconciliation**.
+#### Component Hierarchy
+![Component Hierarchy](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/5faa9877-c61f-485d-baf7-194201f8314f).
