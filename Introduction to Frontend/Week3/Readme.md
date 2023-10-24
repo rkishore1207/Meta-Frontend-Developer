@@ -22,3 +22,4 @@
 
 * Some of the Modifiers in Bootstrap are Primary, Secondary, Success, Danger, Info, Warning, Light, Dark.
 * Always bootstrap row and columns start with `Container`.
+* `img-fluid` -> it changes its width according to the parent element.
