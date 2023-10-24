@@ -23,3 +23,17 @@
 * Some of the Modifiers in Bootstrap are Primary, Secondary, Success, Danger, Info, Warning, Light, Dark.
 * Always bootstrap row and columns start with `Container`.
 * `img-fluid` -> it changes its width according to the parent element.
+
+### Static and Dynamic Contents
+* Static contents are already uploaded in webserver and it will show to user eg, images,videos or texts.
+* Dynamic contents are updated by every `http` requests which was triggered by **user** or sometime if we visit news website it will update based on **Date**.
+* If we request to play video in the browser it send ask the web server and sends back the video file, this is how the static content works.
+* For dynamic content, if we login to coursera 1st the web browser check our logIn Credential through the Application server and based on the response web server suggests the video to us.
+* But application server (Backend) takes more time to process all the requests from the client. To resolve this,
+* Web Server having a cache storage, here it will store the request which was made by user and next time the same request came from user it will immediately return back the response without asking to the application server.
+![Dynamic content updation process](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/62880c83-94a9-4c57-b8d1-047f3ec268c8).
+### Single Page Application
+* Follows two methods such as **Bundling** -> if browser requests an application web server returns the necessary html, css, javascript file to load it in the browser.
+* whereas **LazyLoading** -> sends only minimal files to load on the server.
+* Traditional application or Multipage application cannot render while network is slow because it have entire applications, so only we are going for Single Page Application.
+* 
