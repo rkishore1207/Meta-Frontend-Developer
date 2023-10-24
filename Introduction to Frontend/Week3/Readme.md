@@ -36,4 +36,4 @@
 * Follows two methods such as **Bundling** -> if browser requests an application web server returns the necessary html, css, javascript file to load it in the browser.
 * whereas **LazyLoading** -> sends only minimal files to load on the server.
 * Traditional application or Multipage application cannot render while network is slow because it have entire applications, so only we are going for Single Page Application.
-* 
+* If one request is ask from the user and those response is render in a **new page** in MPA whereas in SPA there is a **view** based pages so every components are rendered in the view of that page.
