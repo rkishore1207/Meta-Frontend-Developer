@@ -17,4 +17,8 @@
 #### Responsive design
 * Usual laptop width is `1920px` and height is `1080px`.
 * Responsiveness is achieved by three things are Flexible grids, Fluid images and Media queries.
-* 
+
+![Breakpoints](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/364af3d3-bb42-47f6-9459-6f74b8f1921b).
+
+* Some of the Modifiers in Bootstrap are Primary, Secondary, Success, Danger, Info, Warning, Light, Dark.
+* Always bootstrap row and columns start with `Container`.
