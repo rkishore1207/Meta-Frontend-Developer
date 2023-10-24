@@ -44,3 +44,9 @@
 * This process is called **Reconciliation**.
 #### Component Hierarchy
 ![Component Hierarchy](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/5faa9877-c61f-485d-baf7-194201f8314f).
+### Libraries used in React
+1. Lodash -> helps to round up a number (3.14 - 3) and sort.
+2. Luxan -> changes the time format to your system's time format, eg, US has **month/day/year** and Europe has **day/month/year** format and Luxon will convert that into current system's format.
+3. Redux -> monitor the state of components
+4. Axios -> work with the http requests and response
+5. Jest -> Unit testing library to test all functions 
