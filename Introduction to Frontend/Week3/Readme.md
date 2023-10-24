@@ -37,3 +37,8 @@
 * whereas **LazyLoading** -> sends only minimal files to load on the server.
 * Traditional application or Multipage application cannot render while network is slow because it have entire applications, so only we are going for Single Page Application.
 * If one request is ask from the user and those response is render in a **new page** in MPA whereas in SPA there is a **view** based pages so every components are rendered in the view of that page.
+### How React Components Works?
+* Html documents are stored in the server as **DOM**, while react application is build, it will transformed everything into `virtual DOM` and render it in the browser.
+* Once the react components are changed, 1st it will compares it with `previous version` of virtual DOM and updates that particular components only.
+* And that virtual DOM compares with the `website DOM` and updates the changed components only.
+* This process is called **Reconciliation**.
