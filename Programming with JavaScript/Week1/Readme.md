@@ -23,7 +23,11 @@
 * Can accomodate very large integer value rather than number.
 #### Symbol
 * It can gives unique property key value to object
+### Operators
 > - Usual operator checks only the value whereas strict equality operator checks both the value and data type.
 > - eg., 100 == "100" -> true
 > - 100 === "100" -> false (Strict equality Operator)
+* If the operator with same precedence came -> associativity came into picture.
+* For assignment operator -> right to left 
+* For comparative operator -> left to right
 
