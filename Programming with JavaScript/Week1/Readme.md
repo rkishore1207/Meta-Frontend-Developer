@@ -15,5 +15,12 @@
 > - Adding a Semicolon represents that particular line of code is completed and in JS there is **Automatic Semicolon Insertion (ASI)** is there to insert Semicolon automatically.
 > - So insertion of semicolon is not mandatory.
 
-*
+### Variables
+* In JS `number` data type has **limited** combination whereas `string` data type has **unlimited** combination.
+* If the variable doesn't have any value assigned to it was represented as **NULL** and **Undefined** data types.
+* JavaScript ES-6 introduced new two data types named BigInt and Symbol.
+#### BigInt
+* Can accomodate very large integer value rather than number.
+#### Symbol
+* It can gives unique property key value to object
 
