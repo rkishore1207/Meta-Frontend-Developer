@@ -42,6 +42,7 @@
 * Once the react components are changed, 1st it will compares it with `previous version` of virtual DOM and updates that particular components only.
 * And that virtual DOM compares with the `website DOM` and updates the changed components only.
 * This process is called **Reconciliation**.
+* `React Fiber Architecture` helps to update the content that are in the visible part and lately the part that are out of sight will get update rather than to upate entire page at a single time (loading the page).
 #### Component Hierarchy
 ![Component Hierarchy](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/5faa9877-c61f-485d-baf7-194201f8314f).
 ### Libraries used in React
