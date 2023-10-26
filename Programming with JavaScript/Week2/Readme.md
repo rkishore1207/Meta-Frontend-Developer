@@ -99,10 +99,31 @@ console.log(car);
 ### Errors and Bugs
 * While executing code we expect something but we would get **something different** that is called `Bugs`.
 * If the code have bugs it runs completely but perform in a **different way**.
+```javascript
+function addTwoNumbers(a,b)
+{
+    console.log(a+b);
+}
+addTwoNumbers('1'+2);
+//We expect arthmetic operation to be done but here we got '12' as the output
+```
 * If the program stuck somewhere and thrown some unexpected behaviour called `Error`.
 * There are three types of error,
     1. Type error
     2. Reference error
-    3. Syntax error
+    3. Syntax error -> ("hello)
+    4. Range Error
 * If the value is not defined or declared but we tend to use that is Reference error.
 * (5).pop -> Type Error
+### Try Catch
+* If we use try and catch block even if our code throw error also our program execution will not stop.
+* If any error thrown by try block, the catch block will catch that and the program also executing properly.
+* `Syntax error is not caught in try catch block`.
+* If you execute one data type functionality into the other data type there exist `typeError`.
+* If you give out of Range number for a fucntion it will throw Unexpected Range error.
+```javascript
+//Range Error
+var number=(10).toString(2);
+console.log(number); //1010
+console.log((10).toString(45))//throw an error
+```

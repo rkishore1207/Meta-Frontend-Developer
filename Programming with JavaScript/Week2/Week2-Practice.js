@@ -32,5 +32,26 @@ console.log(typeof([1,2,3]));//object
 console.log(typeof({color:"red"}));//object
 console.log(typeof(function print(){console.log("Hello world")}));//function
 
+//Try Catch Block
+try{
+    // console.log(a+b);
+    throw new ReferenceError();
+}
+catch(err)
+{
+    console.log("There exists error");
+}
+console.log("Program will not stop");
+
+//Range Error
+try{
+var number=(10).toString(45);
+}
+catch(err)
+{
+    console.log("Range Error occured");
+}
+console.log(number);
+
 
 
