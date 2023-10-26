@@ -127,3 +127,7 @@ var number=(10).toString(2);
 console.log(number); //1010
 console.log((10).toString(45))//throw an error
 ```
+### Null, Undefined and Empty String
+* If one variable expects something but if it **doesn't get** anything it will return `null`.
+* Declared one variable without initialization and prints that, it will give `undefined`.
+* Try to access one of the property that doesn't present in the object, that also give `undefined`.
