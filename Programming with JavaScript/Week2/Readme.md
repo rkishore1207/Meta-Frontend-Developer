@@ -82,3 +82,17 @@ console.log(name1+name2); // Thalapathy vijay
 console.log(name1.concat(name2));// Thalapathy vijay
 //Plus operator in strings act as concatenation
 ```
+### Object Methods
+* We can add Functions() to the object also and that function is referred as `Methods`.
+* Eg, **log()** is the method that present in the console object.
+* If you print the object that has method, it wont't print the body of the method because we couldn't invoke them, hence it print as [Function (Anonymous)].
+```javascript
+var car = {};
+car.mileage = 98765;
+car.color = "red";
+console.log(car);
+car.turnTheKey = function() {
+    console.log("The engine is running")
+}
+console.log(car);
+```
