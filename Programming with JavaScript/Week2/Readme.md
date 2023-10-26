@@ -96,3 +96,13 @@ car.turnTheKey = function() {
 }
 console.log(car);
 ```
+### Errors and Bugs
+* While executing code we expect something but we would get **something different** that is called `Bugs`.
+* If the code have bugs it runs completely but perform in a **different way**.
+* If the program stuck somewhere and thrown some unexpected behaviour called `Error`.
+* There are three types of error,
+    1. Type error
+    2. Reference error
+    3. Syntax error
+* If the value is not defined or declared but we tend to use that is Reference error.
+* (5).pop -> Type Error
