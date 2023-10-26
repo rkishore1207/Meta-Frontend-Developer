@@ -73,3 +73,12 @@ colors.pop();
 > - Return the minimum and maximum values of all the inputs: Math.min(9,8,7) returns 7, Math.max(9,8,7) returns 9.
 > - **Trigonometric methods**: Math.sin(), Math.cos(), Math.tan(), etc.
 > - **Math.Random()** - return random value between 0 and 0.99.
+### Uniqueness of Strings in Javascript
+* As we would iterate over array, in the same way we can iterate over string also.
+```javascript
+var name1 = "Thalapathy";
+var name2 = "Vijay";
+console.log(name1+name2); // Thalapathy vijay
+console.log(name1.concat(name2));// Thalapathy vijay
+//Plus operator in strings act as concatenation
+```
