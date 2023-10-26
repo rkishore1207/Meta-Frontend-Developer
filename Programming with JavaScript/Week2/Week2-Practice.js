@@ -24,3 +24,13 @@ car.lightsOn = function() {
 console.log(car);
 car.turnTheKey(); //Invoking the method to be print
 car.lightsOn();
+
+//TypeOf
+console.log(typeof("Phanindra"));
+console.log(typeof(45>56));//Boolean
+console.log(typeof([1,2,3]));//object
+console.log(typeof({color:"red"}));//object
+console.log(typeof(function print(){console.log("Hello world")}));//function
+
+
+
