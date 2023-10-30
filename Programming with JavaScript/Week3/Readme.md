@@ -22,3 +22,7 @@ consoleLog("Hello");
 //Hello
 //'Hello'
 ```
+* we can run a funtion as a recursive manner, if condition is not satisfied it will run as a infinite loop.
+### Scope
+* The variable that is declared outside of funtion is having Global scope and can accessible to wherever in the program.
+* And the variable that is declared within the funtion is have local scope or Function scope and cannot access outside of the function.
