@@ -71,3 +71,27 @@ let number = "Kishore";
 ```
 
 * `Const` it must be initialized when it is declared and we can not **reassign** itself.
+### How OOP different from Functional Programming
+```javascript
+var shoe = 100;
+var tax = 1.2;
+function calculatePrice()
+{
+    var totalPrice = shoe*tax;
+    console.log(totalPrice);
+}
+calculatePrice();
+
+//Object Oriented Programming
+var purchase={
+    shoe:100,
+    tax:1.5,
+    calculatePrice: function(){
+        var totalPrice = purchase.shoe*purchase.tax;
+        console.log(totalPrice); 
+    }
+}
+```
+* here instead of **purchase** we can use `this` keyword also that is to indicate that this is a current object.
+* combined data and functionalities into a object and easy to use.
+
