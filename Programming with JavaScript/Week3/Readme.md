@@ -50,3 +50,24 @@ function addTwoNums(getNumber1, getNumber2) {
 }
 ```
 3. **Pure Function and side-effects**
+### Var, let and Const
+* `var` is for **Global scope** and we can **reDeclare** another value to the same variable and we can use var variable before it is declared.
+```javascript
+console.log(user);
+var user;
+//undefined -> it will work and print undefined
+var number=2;
+var number = "Kishore";
+//it will print 'Kishore'
+```
+* `let` is mainly for **block scope** and we couldn't able to redeclare and wouldn't able to use before it is declared.
+```javascript
+console.log(user);
+let user;
+//Reference error
+let number = 2;
+let number = "Kishore";
+//Syntax error
+```
+
+* `Const` it must be initialized when it is declared and we can not **reassign** itself.
