@@ -94,4 +94,21 @@ var purchase={
 ```
 * here instead of **purchase** we can use `this` keyword also that is to indicate that this is a current object.
 * combined data and functionalities into a object and easy to use.
-
+## Object Oriented Programmig (OOP)
+* There is class which helps to create objects and act as a template and it mimic the real world objets.
+* There are four principles of OOPs,
+    1. Inheritance
+    2. Encapsulation
+    3. Polymorphism
+    4. Abstraction
+* And objects are ordered in **hierarchial structure** and every class are inherited from `Object class`.
+1. Inheritance:
+* One class is utilizing the properties and methods of another class which is referred to as **base or parent** class.
+```javascript
+class Animal
+{}
+class Bird extends Animal
+{}
+class Eagle extends Bird
+{}
+```
