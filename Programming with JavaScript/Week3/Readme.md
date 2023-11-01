@@ -126,7 +126,8 @@ class Eagle extends Bird
 ```
 * For different purpose concat() function perform different operations.
 ### Constructors
-* It is used to **create an object** withour constructor we could not able *instantiate* object.
+* It is Special Function used to **create an object** withour constructor we could not able *instantiate* object.
+* <u>The constructor will be used to build properties on the future object instance</u>.
 * It is not necessary to be defult or parameterized constructor but every class must need a `constructor`.
 * JavaScript have lot of built-in object types commonly referred as <u>**Native Objects**</u>.
     1. Date
@@ -149,3 +150,15 @@ new String("abc") === new String("abc")// false
 > - In javascript instead of using Object,Array,Function and Regular Expression we could use '{}','[]','()' and '/some words/';
 ----------------------
 * Object.create(); -> inherit the parent object into it
+* After inheriting, if we want to use the parent class's properties we would use `Super` keyword.
+```javascript
+class HighSpeedTrain extends Train {
+    constructor(passengers, highSpeedOn, color, lightsOn) {
+        super(color, lightsOn);//utilizing the parent's properties
+        this.passengers = passengers;
+        this.highSpeedOn = highSpeedOn;
+    }
+}
+```
+* console.log(this) -> will print the properties of the objects
+* Object.getPrototypeOf(objName); -> will print the methods of objects.
