@@ -209,3 +209,12 @@ for(var item of Object.entries(bike)){ //It will print 2D arrays that is both ke
 ### Difference Between For-in loop and For-of loop
 * `For in loop` iterate through object properties as well as prototype properties.
 * Whereas `For of loop` iterate only through object's own proterty not iterate to prototype properties.
+### Template Literal
+* Strings that are enclosed in `backticks` are called **template literals**.
+* Without `+` operator we can add strings and we can able to break the string into **multiline**.
+* content inside the curly braces are `javascript` and outside of that is `string`.
+* we can so **expression evaluation** and also do **ternary operation** with template literal.
+```javascript
+`Hi ${variable name} `
+`${1+1+3} star`
+```
