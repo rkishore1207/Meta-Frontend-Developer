@@ -112,3 +112,16 @@ class Bird extends Animal
 class Eagle extends Bird
 {}
 ```
+2. Encapsulation:
+* To hide the **internal functionalities** and just we would use the outer thing that is `toUpperCase()` is the predefined funtion and it will change everything into UpperCase but we doesn't know how to do that.
+3. Abstraction:
+* To use the interface to does not expose the code we wrote in the function.
+4. Polymorphism:
+* Many representaion that is one funtion will perform in a different form and have different versions.
+* Eg., concat() function is concatenate two strings into single string 
+```javascript
+"abc".concat("efg");//abcdef
+//and for array
+["abc"].concat("edg");//['abc','efg'] 
+```
+* For different purpose concat() function perform different operations.
