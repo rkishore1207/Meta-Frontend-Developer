@@ -162,6 +162,7 @@ class HighSpeedTrain extends Train {
 ```
 * console.log(this) -> will print the properties of the objects
 * Object.getPrototypeOf(objName); -> will print the methods of objects.
+* <u>Prototype refer to the methods in the class.</u>
 ### Default Parameters
 ```javascript
 class Fruit
