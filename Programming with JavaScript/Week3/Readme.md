@@ -175,3 +175,11 @@ class Fruit
 }
 // this also default constructor
 ```
+## De-Structuring arrays and Objects
+* We can assign already exits value to a destructed variable by **{}**.
+```javascript
+let {PI}=Math;
+PI;//3.14
+//but here lowercase 'pi' not applicable
+```
+* The property name (variable name) should be as same as in the object that is **PI** should be capital not small case.
