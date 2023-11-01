@@ -31,3 +31,21 @@ var purchase={
 }
 
 purchase.calculatePrice();
+
+//Inheritance
+var bird ={
+    hasWings:true,
+    canFly:true,
+    hasFeathers:true
+}
+
+var bird1=Object.create(bird);// it will have the bird object as inherited
+console.log(bird1);
+console.log("bird1 has wings:",bird1.hasWings);
+console.log("bird1 can fly:",bird1.canFly);
+console.log("bird1 has feathers:",bird1.hasFeathers);
+console.log(bird1);
+
+var bird2 = Object.create(bird);
+bird2.canFly=false;
+console.log(bird2);

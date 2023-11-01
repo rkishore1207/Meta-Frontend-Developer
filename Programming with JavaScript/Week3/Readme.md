@@ -147,3 +147,5 @@ new String("abc") === new String("abc")// false
 
 ```
 > - In javascript instead of using Object,Array,Function and Regular Expression we could use '{}','[]','()' and '/some words/';
+----------------------
+* Object.create(); -> inherit the parent object into it
