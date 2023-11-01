@@ -112,3 +112,66 @@ class Bird extends Animal
 class Eagle extends Bird
 {}
 ```
+2. Encapsulation:
+* To hide the **internal functionalities** and just we would use the outer thing that is `toUpperCase()` is the predefined funtion and it will change everything into UpperCase but we doesn't know how to do that.
+3. Abstraction:
+* To use the interface to does not expose the code we wrote in the function.
+4. Polymorphism:
+* Many representaion that is one funtion will perform in a different form and have different versions.
+* Eg., concat() function is concatenate two strings into single string 
+```javascript
+"abc".concat("efg");//abcdef
+//and for array
+["abc"].concat("edg");//['abc','efg'] 
+```
+* For different purpose concat() function perform different operations.
+### Constructors
+* It is Special Function used to **create an object** withour constructor we could not able *instantiate* object.
+* <u>The constructor will be used to build properties on the future object instance</u>.
+* It is not necessary to be defult or parameterized constructor but every class must need a `constructor`.
+* JavaScript have lot of built-in object types commonly referred as <u>**Native Objects**</u>.
+    1. Date
+    2. Math
+    3. Random
+    3. Array
+    4. Map
+    5. Set
+    6. Promise
+    7. JSON etc..
+* But for native ojects those may or may not be has constructor but that is not important for native objects.
+```javascript
+Math.pow(2);//Math object doesn't gave constructor so we couldn't invoke
+```
+* We can not compare two objects with equal operator because during we use equal operator it will check the two variables memory not the value and for object case every object is a new one so it will throw false.
+```javascript
+new String("abc") === new String("abc")// false
+
+```
+> - In javascript instead of using Object,Array,Function and Regular Expression we could use '{}','[]','()' and '/some words/';
+----------------------
+* Object.create(); -> inherit the parent object into it
+* After inheriting, if we want to use the parent class's properties we would use `Super` keyword.
+```javascript
+class HighSpeedTrain extends Train {
+    constructor(passengers, highSpeedOn, color, lightsOn) {
+        super(color, lightsOn);//utilizing the parent's properties
+        this.passengers = passengers;
+        this.highSpeedOn = highSpeedOn;
+    }
+}
+```
+* console.log(this) -> will print the properties of the objects
+* Object.getPrototypeOf(objName); -> will print the methods of objects.
+* <u>Prototype refer to the methods in the class.</u>
+### Default Parameters
+```javascript
+class Fruit
+{
+    constructor(color="red",name="apple")
+    {
+        this.color=color,
+        this.name=name
+    }
+}
+// this also default constructor
+```
