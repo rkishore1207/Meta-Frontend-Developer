@@ -218,3 +218,24 @@ for(var item of Object.entries(bike)){ //It will print 2D arrays that is both ke
 `Hi ${variable name} `
 `${1+1+3} star`
 ```
+## Data Structures
+### Arrays
+1. forEach()
+2. filter()
+3. map()
+```javascript
+var arrays = [10,20,30,40,50];
+arrays.forEach(function(array,index){
+    console.log(`${index} : ${array}`);
+})
+//the function which is inside forEach() method is apply for each and every element in the array and first parameter represents element and second represent index.
+
+arrays.filter(function(array){
+    return array>30;
+})
+
+arrays.map(function(array){
+    return array/10;
+}) //it is just like iterating the array
+```
+### Set
