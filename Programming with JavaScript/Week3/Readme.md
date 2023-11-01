@@ -206,3 +206,6 @@ for(var item of Object.entries(bike)){ //It will print 2D arrays that is both ke
     console.log(item);
 }
 ```
+### Difference Between For-in loop and For-of loop
+* `For in loop` iterate through object properties as well as prototype properties.
+* Whereas `For of loop` iterate only through object's own proterty not iterate to prototype properties.
