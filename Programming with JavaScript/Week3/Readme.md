@@ -238,4 +238,22 @@ arrays.map(function(array){
     return array/10;
 }) //it is just like iterating the array
 ```
-### Set
+### Objects (converting objects into array)
+```javascript
+//Converting objects into array
+function ObjectIntoArray(){
+    var result=[];
+    var car ={
+        speed:100,
+        color:"Red",
+        Model:"Benz"
+    }
+    var carKeys=Object.keys(car);
+    carKeys.forEach(function(key){
+        result.push(key,car[key]);
+    })
+    console.log(result);
+}
+ObjectIntoArray();//[ 'speed', 100, 'color', 'Red', 'Model', 'Benz' ]
+```
+### Maps

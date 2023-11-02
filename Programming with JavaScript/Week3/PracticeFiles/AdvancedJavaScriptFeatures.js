@@ -55,3 +55,19 @@ function looops(){
     }
 }
 looops();
+
+//Converting objects into array
+function ObjectIntoArray(){
+    var result=[];
+    var car ={
+        speed:100,
+        color:"Red",
+        Model:"Benz"
+    }
+    var carKeys=Object.keys(car);
+    carKeys.forEach(function(key){
+        result.push(key,car[key]);
+    })
+    console.log(result);
+}
+ObjectIntoArray();
