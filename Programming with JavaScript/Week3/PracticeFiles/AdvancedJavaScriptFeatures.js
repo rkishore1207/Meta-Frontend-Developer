@@ -85,3 +85,42 @@ console.log(bikes.get(2));
 var bikes = ["pulsar","R15","Mt","pulsar","gixxer","R15"];
 var uniqueBikes = new Set(bikes);
 console.log(uniqueBikes);
+
+//Rest Operator
+function calculateValues(tax,...rest){
+    return rest.map(item => tax*item);
+}
+console.log(calculateValues(1.1,46,67,89,93));
+
+//Spread Operator
+
+//concatenation
+var movies = ["leo","sarpatta parambarai"];
+var films = ["asuran","beast"];
+var cinemas = [...movies,...films];
+console.log(cinemas);
+var bikes ={
+    speed:100,
+    color:"Black"
+}
+var car ={
+    speed:150,
+    Model:"Benz"
+}
+console.log({...bikes,...car});//if both the object have same properties then it will take the second object's property
+
+//Add new elements
+var newCinemas = [...movies,"Mersal","Kaththi"];
+console.log(newCinemas);
+
+//String to array
+var name = "Kishore";
+console.log([...name]);
+
+//Copy one object into other
+var newBike = {...bikes};
+console.log(newBike);
+
+const meal = ["soup", "steak", "ice cream"]
+let [starter] = meal;
+console.log(starter);

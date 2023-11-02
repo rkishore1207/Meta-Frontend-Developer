@@ -273,4 +273,27 @@ console.log(bikes.get(2));
 var bikes = ["pulsar","R15","Mt","pulsar","gixxer","R15"];
 var uniqueBikes = new Set(bikes);
 console.log(uniqueBikes);
+
+let set = new Set();
+    set.add(1);
+    set.add(2);
+    set.add(3);
+    set.add(2);
+    set.add(1);
+// [1,2,3]
+```
+### Spread Operator
+* The spread operator allows you to pass all array elements into a function <u>without having to type them all individually</u>.
+* We can also add the existint objects property or array elements into the new object and array but spread operator.
+    1. We can concatenate arrays and objects
+    2. We can new elements to array
+    3. split string into an array
+    4. Copy an array or object into an other object or array
+### Rest Operator
+* The rest operator allows you to take items from an array and use them to create a separate sub-array.
+```javascript
+function calculateValues(tax,...rest){
+    return rest.map(item => tax*item);
+}
+console.log(calculateValues(1.1,46,67,89,93)); //[ 50.6, 73.7, 97.9, 102.30000000000001 ]
 ```
