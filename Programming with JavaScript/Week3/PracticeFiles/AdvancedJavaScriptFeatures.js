@@ -71,3 +71,17 @@ function ObjectIntoArray(){
     console.log(result);
 }
 ObjectIntoArray();
+
+//Map
+var bikes = new Map();
+bikes.set(1,"Pulsar");
+bikes.set(2,"R15");
+bikes.set(3,"Mt");
+console.log(bikes);
+//to print particular element
+console.log(bikes.get(2));
+
+//Set
+var bikes = ["pulsar","R15","Mt","pulsar","gixxer","R15"];
+var uniqueBikes = new Set(bikes);
+console.log(uniqueBikes);
