@@ -301,3 +301,15 @@ console.log(calculateValues(1.1,46,67,89,93)); //[ 50.6, 73.7, 97.9, 102.3000000
 ### JavaScript DOM Manipulation
 * Browser shows the `html` page to the user and the same page's **object Model(javascript object)** that is, that currently active page's **(Document)** complete object Model is stored in the *browser memory*, aka `DOM`. 
 * We can modify that DOM by `Javascript`, and that changes 1st affect the `DOM` which is stored in the **Browser memory**, after then it will reflect in the **Browser's HTML page**.
+```javascript
+const h2 = document.createElement('h2');
+h2.innerText="This is h2 Element";
+h2.setAttribute('id','subHeading');
+h2.setAttribute('class','secondary');
+document.body.appendChild(h2);
+```
+### JavaScript Selectors
+1. document.querySelector('p'); -> return the first matched paragraph texts
+2. document.querySelectorAll('p'); -> return all the matched paragraphs
+3. document.getElementByIda('heading'); -> return single value
+4. document.getElementsByClassName('txt'); -> return values as a collection
