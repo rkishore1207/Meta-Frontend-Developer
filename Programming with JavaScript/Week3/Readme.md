@@ -297,3 +297,7 @@ function calculateValues(tax,...rest){
 }
 console.log(calculateValues(1.1,46,67,89,93)); //[ 50.6, 73.7, 97.9, 102.30000000000001 ]
 ```
+## Javascript in the Browser
+### JavaScript DOM Manipulation
+* Browser shows the `html` page to the user and the same page's **object Model(javascript object)** that is, that currently active page's **(Document)** complete object Model is stored in the *browser memory*, aka `DOM`. 
+* We can modify that DOM by `Javascript`, and that changes 1st affect the `DOM` which is stored in the **Browser memory**, after then it will reflect in the **Browser's HTML page**.
