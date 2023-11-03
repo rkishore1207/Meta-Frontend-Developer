@@ -313,3 +313,13 @@ document.body.appendChild(h2);
 2. document.querySelectorAll('p'); -> return all the matched paragraphs
 3. document.getElementByIda('heading'); -> return single value
 4. document.getElementsByClassName('txt'); -> return values as a collection
+### Event Handling
+* If some event is happened that is some button is clicked or something changed we will trigger some function that is called **EVent handling**.
+```javascript
+const target = document.querySelector('header');
+function handleEvent(){
+    console.log('Event is Clicked')
+}
+target.addEventListener('click',handleEvent);
+```
+* With the help `addEventListener()` method we can able to catch the **event(click)** that gonna occur on the specified **element(target)** and it trigger some **function (handleEvent)**.
