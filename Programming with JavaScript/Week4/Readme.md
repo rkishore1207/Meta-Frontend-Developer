@@ -15,3 +15,17 @@ function addTwo(strA,strB){
 expect(addTwo("abc","def")).toBe("abcdef"); //green
 expect(addTwo(1,2)).toBe(12); //Red
 ```
+### Types of Testing
+    1. End To End Testing (e2e)
+    2. Integration
+    3. Unit Testing
+1. `e2e` -> Test the webapplication as **how user** would use the application and execute this test to a **completed application** and it is **slower and time consuming** testing and tester is not a developer.
+* Some of the e2e testing frameworks are,
+    * WebDriver JS
+    * Protractor
+    * Cypress
+
+2. `Integration` -> How a piece of code is communicating with other parts of the code and it is fast than e2e testing and some of the tools are,
+    * React testing library
+    * Enzyme
+3. `Unit Test` -> To test the small units of the code that is functions without affect existing functionalities and it very cheap and fast than other two tests.
