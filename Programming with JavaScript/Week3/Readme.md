@@ -175,3 +175,177 @@ class Fruit
 }
 // this also default constructor
 ```
+## De-Structuring arrays and Objects
+* We can assign already exits value to a destructed variable by **{}**.
+```javascript
+let {PI}=Math;
+PI;//3.14
+//but here lowercase 'pi' not applicable
+```
+* The property name (variable name) should be as same as in the object that is **PI** should be capital not small case.
+_____________________________
+### For of Loop
+* Defaultly <u>**Objects are not iteratable**</u> unlike arrays and sets.
+* But with the help of some built-in functions we should able to loop over the objects.
+    1. Object.keys()
+    2. Object.values()
+    3. Object.entries()
+```javascript
+// For of Loop
+var bike ={
+    speed:100,
+    color:"Black"
+}
+for(var item of Object.keys(bike)){ //Print only keys of the properties
+    console.log(item);
+}
+for(var item of Object.values(bike)){ //Print only values of the properties
+    console.log(item);
+}
+for(var item of Object.entries(bike)){ //It will print 2D arrays that is both keys and values
+    console.log(item);
+}
+```
+### Difference Between For-in loop and For-of loop
+* `For in loop` iterate through object properties as well as prototype properties.
+* Whereas `For of loop` iterate only through object's own proterty not iterate to prototype properties.
+### Template Literal
+* Strings that are enclosed in `backticks` are called **template literals**.
+* Without `+` operator we can add strings and we can able to break the string into **multiline**.
+* content inside the curly braces are `javascript` and outside of that is `string`.
+* we can so **expression evaluation** and also do **ternary operation** with template literal.
+```javascript
+`Hi ${variable name} `
+`${1+1+3} star`
+```
+## Data Structures
+### Arrays
+1. forEach()
+2. filter()
+3. map()
+```javascript
+var arrays = [10,20,30,40,50];
+arrays.forEach(function(array,index){
+    console.log(`${index} : ${array}`);
+})
+//the function which is inside forEach() method is apply for each and every element in the array and first parameter represents element and second represent index.
+
+arrays.filter(function(array){
+    return array>30;
+})
+
+arrays.map(function(array){
+    return array/10;
+}) //it is just like iterating the array
+```
+### Objects (converting objects into array)
+```javascript
+//Converting objects into array
+function ObjectIntoArray(){
+    var result=[];
+    var car ={
+        speed:100,
+        color:"Red",
+        Model:"Benz"
+    }
+    var carKeys=Object.keys(car);
+    carKeys.forEach(function(key){
+        result.push(key,car[key]);
+    })
+    console.log(result);
+}
+ObjectIntoArray();//[ 'speed', 100, 'color', 'Red', 'Model', 'Benz' ]
+```
+### Maps
+```javascript
+//Map
+var bikes = new Map();
+bikes.set(1,"Pulsar");
+bikes.set(2,"R15");
+bikes.set(3,"Mt");
+console.log(bikes);
+//to print particular element
+console.log(bikes.get(2));
+```
+### Set
+* It is similar to arrays but it won't accept the repetitive elements.
+```javascript
+var bikes = ["pulsar","R15","Mt","pulsar","gixxer","R15"];
+var uniqueBikes = new Set(bikes);
+console.log(uniqueBikes);
+
+let set = new Set();
+    set.add(1);
+    set.add(2);
+    set.add(3);
+    set.add(2);
+    set.add(1);
+// [1,2,3]
+```
+### Spread Operator
+* The spread operator allows you to pass all array elements into a function <u>without having to type them all individually</u>.
+* We can also add the existint objects property or array elements into the new object and array but spread operator.
+    1. We can concatenate arrays and objects
+    2. We can new elements to array
+    3. split string into an array
+    4. Copy an array or object into an other object or array
+### Rest Operator
+* The rest operator allows you to take items from an array and use them to create a separate sub-array.
+```javascript
+function calculateValues(tax,...rest){
+    return rest.map(item => tax*item);
+}
+console.log(calculateValues(1.1,46,67,89,93)); //[ 50.6, 73.7, 97.9, 102.30000000000001 ]
+```
+## Javascript in the Browser
+### JavaScript DOM Manipulation
+* Browser shows the `html` page to the user and the same page's **object Model(javascript object)** that is, that currently active page's **(Document)** complete object Model is stored in the *browser memory*, aka `DOM`. 
+* We can modify that DOM by `Javascript`, and that changes 1st affect the `DOM` which is stored in the **Browser memory**, after then it will reflect in the **Browser's HTML page**.
+```javascript
+const h2 = document.createElement('h2');
+h2.innerText="This is h2 Element";
+h2.setAttribute('id','subHeading');
+h2.setAttribute('class','secondary');
+document.body.appendChild(h2);
+```
+### JavaScript Selectors
+1. document.querySelector('p'); -> return the first matched paragraph texts
+2. document.querySelectorAll('p'); -> return all the matched paragraphs
+3. document.getElementByIda('heading'); -> return single value
+4. document.getElementsByClassName('txt'); -> return values as a collection
+### Event Handling
+* If some event is happened that is some button is clicked or something changed we will trigger some function that is called **EVent handling**.
+```javascript
+const target = document.querySelector('header');
+function handleEvent(){
+    console.log('Event is Clicked')
+}
+target.addEventListener('click',handleEvent);
+```
+* With the help `addEventListener()` method we can able to catch the **event(click)** that gonna occur on the specified **element(target)** and it trigger some **function (handleEvent)**.
+### DOM manipulation with Event Handling
+```javascript
+var h1 = document.createElement('h1')
+h1.innerText = "Type into the input to make this text change"
+
+var input = document.createElement('input')
+input.setAttribute('type', 'text')
+
+document.body.innerText = '';
+document.body.appendChild(h1);
+document.body.appendChild(input);
+
+input.addEventListener('change', function() {
+    h1.innerText = input.value
+})
+```
+### JavaScript object Notation:(JSON)
+* with `JSON.parse` convert the string literal(javascript file) into javascript object and we can work around that.
+* with `JSON.stringify` convert object into string literal.
+```javascript
+'{"greetings":"hello"}'
+const jsonFile = '{"greetings":"hello"}';
+const jsonObj = JSON.parse(jsonFile);
+jsonObj.greetings="hi";
+JSON.stringify(jsonObj);
+```
