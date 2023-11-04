@@ -29,3 +29,18 @@ expect(addTwo(1,2)).toBe(12); //Red
     * React testing library
     * Enzyme
 3. `Unit Test` -> To test the small units of the code that is functions without affect existing functionalities and it very cheap and fast than other two tests.
+### Jest
+* It is one of the javaScript framework to test the **functionalities** of the javascript code and it have testing environments such as Jasmine,karma,mocha,and qUnit.
+* Jest also used for testing,
+    1. Babel
+    2. TypeScript
+    3. Angular
+    4. Node
+    5. Vue
+* It also supports code coverage that is it shows how many lines of javaScript code was covered by testing.
+![Code Coverage](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/9a6a04e6-3a6e-4815-9654-a869a588667a)
+* `Mocking` -> It just exhibit the behaviour of some functionality
+* Eg., if backend data is not ready in the case we just fake the backend data and pretend that behaviour to consume that in frontend.
+* One of the famous mocking library is **cyanon** but jest have built potential to use the mock.
+* We mainly used mock for testing the **asynchronous** function.
+* `SnapShot testing` -> web developers verify that there are **no regression** in the DOM.
