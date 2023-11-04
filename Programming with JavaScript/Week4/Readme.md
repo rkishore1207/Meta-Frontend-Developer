@@ -44,3 +44,9 @@ expect(addTwo(1,2)).toBe(12); //Red
 * One of the famous mocking library is **cyanon** but jest have built potential to use the mock.
 * We mainly used mock for testing the **asynchronous** function.
 * `SnapShot testing` -> web developers verify that there are **no regression** in the DOM.
+### Writing tests for jest
+* 1st check if the jest in installed in the vsCode by `jest --version`.
+* If not then init the package.json by `npm init -y` -> it will create the package.json file for the current directory.
+* Install the Jest package from npm by `npm install --save-dev jest`.
+* Then change the **test value** in the script to **"jest"**.
+* Execute the test Cases by `npm run test`.
