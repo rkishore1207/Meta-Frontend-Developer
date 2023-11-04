@@ -339,3 +339,13 @@ input.addEventListener('change', function() {
     h1.innerText = input.value
 })
 ```
+### JavaScript object Notation:(JSON)
+* with `JSON.parse` convert the string literal(javascript file) into javascript object and we can work around that.
+* with `JSON.stringify` convert object into string literal.
+```javascript
+'{"greetings":"hello"}'
+const jsonFile = '{"greetings":"hello"}';
+const jsonObj = JSON.parse(jsonFile);
+jsonObj.greetings="hi";
+JSON.stringify(jsonObj);
+```
