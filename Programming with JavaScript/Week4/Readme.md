@@ -50,3 +50,6 @@ expect(addTwo(1,2)).toBe(12); //Red
 * Install the Jest package from npm by `npm install --save-dev jest`.
 * Then change the **test value** in the script to **"jest"**.
 * Execute the test Cases by `npm run test`.
+### Test Driven Development
+* It is one approach to efficient testing the application's functionalities by 1st wrote the **failed test cases** and write code to meet up requirements and make the **test to pass**.
+* That is `Red` (failing test case), `Green` (write code and make it pass) and `Refactoring` the code to check everything is fine.
