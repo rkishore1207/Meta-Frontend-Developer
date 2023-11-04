@@ -323,3 +323,19 @@ function handleEvent(){
 target.addEventListener('click',handleEvent);
 ```
 * With the help `addEventListener()` method we can able to catch the **event(click)** that gonna occur on the specified **element(target)** and it trigger some **function (handleEvent)**.
+### DOM manipulation with Event Handling
+```javascript
+var h1 = document.createElement('h1')
+h1.innerText = "Type into the input to make this text change"
+
+var input = document.createElement('input')
+input.setAttribute('type', 'text')
+
+document.body.innerText = '';
+document.body.appendChild(h1);
+document.body.appendChild(input);
+
+input.addEventListener('change', function() {
+    h1.innerText = input.value
+})
+```
