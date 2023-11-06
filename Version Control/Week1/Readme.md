@@ -19,3 +19,9 @@
 * It's easy but slow and we need to always connect to the server.
 * `Distributed` -> It is similar to Centralized version but if you pull the code from the repo to your local machine it would include **all the history** of the changes also.
 * It is fast and easier than centralized and <u>doesn't need always connect to server</u>, until you want to see the latest history.
+### History of GIT (Version Control System)
+* At 1990, **Concurrent Version System (CVS)** was developed to monitor the l`ocal system's folder` structure but it sould track only the text files not the binary files such as Video,images and doesn't have server.
+* Then **SubVersioN(SVN)** came into picture which resolves all the disadvantages of CVS and gave server also by the help of `BitKeeper`.
+* Then license of bitkeeper were **revoked** then market planned to develop two projects for the distributed version system.
+* By the result they developed **Mercurial** and everyone moves to Mercurial because we don't need to always connect to server.
+* After that, 2007 **Git** was introduced and it is very advantage in order of every feature so everyone start to use GIT.
