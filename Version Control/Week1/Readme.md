@@ -32,3 +32,14 @@
 * **Continuous Integration** is for making to verify our development code's <u>test automatically and build</u> it into an artifact that is executable format for all platforms.
 * And **Continuous Delivery** is just `packaging our artifact` and make is available for Continuous Deployment.
 * In CD 1st it will validate from the **staging environment** that everything is packaged correctly and it will safely release it to the live environment that is **Production Environment**.
+### Staging Vs Production
+* During development, developers develop the code as to meet the **requirement functionality** and before it's getting release there is lot of environments to achieve that everything is perfect.
+* Development, UAT or QA and Staging Environment.
+* `Staging Environment` is mimic the **production environment**, and do every testing and validation are here itself before deploy into production(live).
+* `New feature` -> In this verify that after adding new feature and make changes our code is working fine as it is before.
+* `Configuration verification` -> as we know there is different configuration files for development and production and check if it is correct for production.
+* `Package Updation` -> to verify all the dependencies are upated versions.
+* And execute different types of testing that Unit testing, integration testing and Performance testing(End to end testing).
+* `Migrations validation` -> to check all the migrations are work fine.
+* `Production environment` is the final stage where we will make this as **live** and users gonna use this.
+* It's very crucial that if any <u>DownTime or Vulnarabilities</u> arise that is very risky and dangerous to organization, hence every testing need to be complete before production.
