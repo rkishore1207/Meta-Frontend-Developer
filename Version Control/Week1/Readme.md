@@ -25,3 +25,10 @@
 * Then license of bitkeeper were **revoked** then market planned to develop two projects for the distributed version system.
 * By the result they developed **Mercurial** and everyone moves to Mercurial because we don't need to always connect to server.
 * After that, 2007 **Git** was introduced and it is very advantage in order of every feature so everyone start to use GIT.
+### Version Control WorkFlow
+* GIT having two workflows are,
+    1. How to be resolve conflicts
+    2. It should be easy to make Peer review and getting approved
+* **Continuous Integration** is for making to verify our development code's <u>test automatically and build</u> it into an artifact that is executable format for all platforms.
+* And **Continuous Delivery** is just `packaging our artifact` and make is available for Continuous Deployment.
+* In CD 1st it will validate from the **staging environment** that everything is packaged correctly and it will safely release it to the live environment that is **Production Environment**.
