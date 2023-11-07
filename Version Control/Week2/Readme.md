@@ -9,3 +9,6 @@
 * `#!/bin/bash` -> notify that it is a bash script file.
 * `/` -> root and `~` -> home
 * `mv sourceFile destinationFile`;
+* `mv file.txt dir2/dir3/` -> moving file to directory 3 which is in directory 2.
+* `cd ../dir2` -> move to the back immediately go into the directory2.
+* Pipes were used to give the output of one command to the input of other command.
