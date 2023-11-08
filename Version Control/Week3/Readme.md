@@ -11,3 +11,7 @@
 * If any changes or add or delete in the working directory that to be considered as **Modified** but those are *not tracked* by the remote.
 * Then with `git add .` we would force them into **staging environment** and with `git commit` just **save** all the changes to the ***remote repository***.
 * After adding our modified files, it will be going into Staging environment then by `git restore --stage <fileName>` this command we can retrive our files back before commit.
+------------
+* `git branch <branchName>` just create new branch in the repo.
+* `git checkout -B feature/lesson` -> create new feature branch and <u>copy everything in the main branch</u> to this branch and the pointer points to newly created branch immediately.
+* The purpose of a pull request is to obtain a **peer review** of changes made to the branch. In other words, to validate that the *changes are correct*.
