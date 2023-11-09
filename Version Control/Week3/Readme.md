@@ -15,3 +15,8 @@
 * `git branch <branchName>` just create new branch in the repo.
 * `git checkout -B feature/lesson` -> create new feature branch and <u>copy everything in the main branch</u> to this branch and the pointer points to newly created branch immediately.
 * The purpose of a pull request is to obtain a **peer review** of changes made to the branch. In other words, to validate that the *changes are correct*.
+---------------
+### TO connect remote repo with local by GITHUB CLI
+* Run `gh auth login`, then Select `GitHub.com` -> `HTTPS` -> `Paste an Authentication token` -> with the required scopes.
+* Clone the repo by `gh repo clone "<userName>/<repoName>"`.
+* Enable email and userName by `git config user.email "rkishoreatr1207@gmail.com"` and `git config user.name "rkishore1207"`.
