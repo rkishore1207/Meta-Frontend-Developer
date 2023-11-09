@@ -20,3 +20,8 @@
 * Run `gh auth login`, then Select `GitHub.com` -> `HTTPS` -> `Paste an Authentication token` -> with the required scopes.
 * Clone the repo by `gh repo clone "<userName>/<repoName>"`.
 * Enable email and userName by `git config user.email "rkishoreatr1207@gmail.com"` and `git config user.name "rkishore1207"`.
+------------
+* Before push always execute `git status` to check if any conflicts are there.
+* `git log --merge` to identify who and which branch cause the conflict.
+* If there is any conflicts `git diff` to know at where were conflicts occured.
+* with the **<<<<>>>>** we can specify what does we want and avoid.
