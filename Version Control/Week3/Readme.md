@@ -25,3 +25,9 @@
 * `git log --merge` to identify who and which branch cause the conflict.
 * If there is any conflicts `git diff` to know at where were conflicts occured.
 * with the **<<<<>>>>** we can specify what does we want and avoid.
+-------
+* To check the current commit **Hash Id** just execute `.git/refs/heads/<branch Name>`.
+* For every commit new hash id were created.
+* <u>Head always point to the last commit.</u>
+* `git diff <file1> <file2>` -> shows what are the files were changed in both the files.
+* `HEAD` -> shows the last committed files
