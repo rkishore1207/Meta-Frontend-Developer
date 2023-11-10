@@ -31,3 +31,12 @@
 * <u>Head always point to the last commit.</u>
 * `git diff <file1> <file2>` -> shows what are the files were changed in both the files.
 * `HEAD` -> shows the last committed files
+> Git Blame
+* To show the all details of the edited files,
+    1. HashID
+    2. Author
+    3. Date
+    4. Time
+    5. Line Number
+    6. Content
+* With the flag, `git blame -l 5,15 <fileName>` -> it will show only the details between those limit.
