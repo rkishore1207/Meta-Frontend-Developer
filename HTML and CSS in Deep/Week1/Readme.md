@@ -21,3 +21,19 @@
     3. **name** = keywords, **content** = "filter,shopping,commerce,clothes"
     4. **name** = robot, **content** ="index,follow"-> <u>**index** is telling to analyze entire program and **follow** is telling go into all the hyper Links.</u>
     5. **name** = viewport, **content** = "width=device-width,initial-scale=1.0" -> <u>it is for responsive and SEO</u>.
+## Preview a Website in the shared location
+* This is achieved by **Open Graph Protocol**.
+* In the **'Meta'** tag insert property and content attribute,
+```javascript
+<Meta property="og:title" content="Microsoft">
+<Meta property="og:type" content="Website">
+<Meta property="og:url" content="link.....">
+<Meta property="og:image" content="image url should be pasted here">
+<Meta property="og:description" content="some extra content">
+<Meta property="og:locale" content="en_US">
+<Meta property="og:site_name" content="Kishore's Website">
+```
+* We also should be create **Social Media cards** for our website to grab the user attention.
+## Client and Server Side Validation
+* HTML has input element and it will accept the user inputs with some validation such as email,text,number,tel,range,url,etc and some other client side validation which was done by JavaScript.
+* There also occured server side validation for complex validation and it is very crucial because it avoids invalid data from the database.
