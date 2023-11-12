@@ -37,3 +37,20 @@
 ## Client and Server Side Validation
 * HTML has input element and it will accept the user inputs with some validation such as email,text,number,tel,range,url,etc and some other client side validation which was done by JavaScript.
 * There also occured server side validation for complex validation and it is very crucial because it avoids invalid data from the database.
+## INPUTS
+* Input tag has **button type** and `Button` itself is a separate element, hence the difference is predefined button element can contain **body text**.
+* Label and input elements are connected together -> <u>id name should be same.</u>
+```javascript
+<form action="myserver.com" method="POST">
+  …
+<input type="submit" value="Submit" />
+</form>
+```
+* `Datetime-local` has time also.
+* `File type` should specify what file that is by `accept` attribute and for multiple selection, should include **Multiple** keyword.
+* `Hidden type` -> Defines a control that is not displayed but whose value is still submitted to the server.
+```javaScript
+<input type="hidden" id="custId" name="custId" value="3487">
+// tel
+<input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}">
+```
