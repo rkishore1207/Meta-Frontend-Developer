@@ -11,3 +11,13 @@
 * `'Aside'` -> A secondary set of content that is not required to understand the main content.
 * `'Details'` -> A collapsed section of content that can be expanded if the user wishes to view it.
 * `'Summary'` -> Specifies the summary or caption of a **'details'** element.
+## Meta Tags and Meta Data
+* Every browser has it's own algorithm for giving results of Search and it is measured by **SEO (Search Engine Optimization)**.
+* And SEO is also based on **Semantic tags** influences, that is if our page has `'anchor'` tag it will go inside of another page and by analysing every page it would stack the result pages.
+* Search algo, verifies the **'Meta tag'** in the head and it have two attributes are `name` and `content`.
+* Some of them are,
+    1. **name** = author, **content** = 'Kishore'
+    2. **name** = description, **content** = "something about author"
+    3. **name** = keywords, **content** = "filter,shopping,commerce,clothes"
+    4. **name** = robot, **content** ="index,follow"-> <u>**index** is telling to analyze entire program and **follow** is telling go into all the hyper Links.</u>
+    5. **name** = viewport, **content** = "width=device-width,initial-scale=1.0" -> <u>it is for responsive and SEO</u>.
