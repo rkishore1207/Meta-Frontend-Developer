@@ -69,3 +69,15 @@
 </style>
 ```
 * Whenever those default validations occur it will call the **invalid style** in CSS.
+### Radio Button
+* Wrap the set of radio buttons inside the `fieldSet` element and every radio button with name inside the `label` elements.
+```javaScript
+<fieldset>
+    <label>
+        <input type="radio" value="indoor" checked name="location"/> Indoor
+    </label>
+    <label>
+        <input type="radio" value="outdoor" name="location"/> Outdoor
+    </label>
+</fieldset>
+```
