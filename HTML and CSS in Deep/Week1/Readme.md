@@ -92,3 +92,21 @@
 ![Input checkboxes](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/2efc859c-6fed-49e0-baad-6fbdba52ff44)
 * To avoid this we should point to every element and give common styles like <u>width and length = 100%</u>
 * **'legend'** is used for caption to fieldset element.
+
+## MEDIA TYPES
+### Video
+```javaScript
+<video width="300px" height="300px" controls>
+    <source src="dance.mp4" type="video/mp4">
+    //if one format is not supported by browser it will find other file type
+    <source src="dance.ogg" type="video/ogg">
+</video>
+```
+### Audio
+```javaScript
+<audio controls>
+    <source src="venmegam.mp3" type="audio/mprg">
+    //if one format is not supported by browser it will find other file type
+    <source src="venmegam.ogg" type="audio/ogg">
+</audio>
+```
