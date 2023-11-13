@@ -105,8 +105,53 @@
 ### Audio
 ```javaScript
 <audio controls>
-    <source src="venmegam.mp3" type="audio/mprg">
+    <source src="venmegam.mp3" type="audio/mpeg">
     //if one format is not supported by browser it will find other file type
     <source src="venmegam.ogg" type="audio/ogg">
 </audio>
+```
+## Images
+```javaScript
+<figure> 
+   <img src="photo.png" width="320" alt="My Profile Photo"> 
+   <figcaption>A photo of myself on a beach in 2015</figcaption> 
+</figure>
+```
+## IFrames
+```javaScript
+<iframe src="website.com" width="320" height="240" accept="camera 'none'; microphone 'none';" sandbox=""></iframe>
+//empty string sandbox represents all the restrictions such as No popup, No downloads,etc... 'sandbox="allow-downloads allow-modals"'
+```
+* **allow="fullscreen”** the fullscreen mode can be activated 
+* **allow=“geolocation”** lets you access the user’s location
+```javaScript
+<iframe name = "My Frame" width="400" height="300"></iframe>  
+```
+### referrerpolicy 
+> - A referrer is the HTTP header that lets the page know who is loading it. This attribute indicates which referrer information to send when loading the frame resource. The common values are: 
+* `no-referrer` The referrer header will not be sent. 
+* `origin` The referrer will be limited to the origin of the referring page 
+* `strict-origin` The origin of the document is sent as the referrer only when using the same protocol security level (HTTPS to HTTPS) 
+
+> - **allow-downloads** Allows the user to download an item 
+> - **allow-forms** Allows the user to submit forms 
+> - **allow-modals** The resource can open modal windows 
+> - **allow-orientation**-lock Lets the resource lock the screen orientation 
+> - **allow-popups** Allows popups to open 
+> - **allow-presentation** Allows a presentation session to start 
+> - **allow-scripts** Lets the resource run scripts without creating popup windows
+```javascript
+<iframe src="my_iframe_src.html" srcdoc="<p>My inline html</p>" > 
+</iframe> 
+//srcdoc will override the src attribute
+```
+```javascript
+<iframe src="my_iframe_src.html" loading="lazy" > 
+</iframe> 
+```
+* `lazy` -> iframe content loaded only when those content are visible to user
+* `eager` -> it also loaded while our webpage is getting load
+```javascript
+<iframe src="history.html" title="An embedded document about the history of my family" > 
+</iframe> 
 ```
