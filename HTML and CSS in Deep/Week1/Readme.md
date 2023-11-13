@@ -54,3 +54,18 @@
 // tel
 <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}">
 ```
+-----------
+* During creating a form make sure embed every **input** element in a `div tag` with label and ensure that both are connected by **for and id** attribute.
+* Some of the default validation for the inputs in form are listed below,
+```javaScript
+<input type="text" id="user_name" name="user_name" required minlength="3" maxlength="13"/>
+<style>
+    input:invalid{
+        border:1px solid red;
+    }
+    input:focus:invalid{
+        border:1px solid red;
+    }
+</style>
+```
+* Whenever those default validations occur it will call the **invalid style** in CSS.
