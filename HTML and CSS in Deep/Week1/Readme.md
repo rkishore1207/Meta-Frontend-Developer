@@ -91,3 +91,4 @@
 ![Input texts](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/f701b460-251d-4641-ad42-302b8a76ea9a)
 ![Input checkboxes](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/2efc859c-6fed-49e0-baad-6fbdba52ff44)
 * To avoid this we should point to every element and give common styles like <u>width and length = 100%</u>
+* **'legend'** is used for caption to fieldset element.
