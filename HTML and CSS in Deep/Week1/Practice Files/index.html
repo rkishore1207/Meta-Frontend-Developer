@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Littel Lemon</title>
+        <meta property="og:title" content="Little Lemon">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://localhost:5500">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="Shows all description">
+        <meta property="og:site_name" content="Kishore">
+        <meta property="og:locale" content="en_US">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <div>
+                <label for="booking_date">Booking Date</label>
+                <input type="date" id="booking_date" name="booking_date"/>
+            </div>
+            <div>
+                <label for="booking_people">Booking People</label>
+                <input type="range" id="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value=this.value"/>
+                <output>4</output>
+            </div>
+            <div>
+                <label for="locations">Choosing Locations</label>
+                <input id="locations" name="booking_locations" list="location"/>
+                <datalist id="location">
+                    <option value="DownTown">DownTown</option>
+                    <option value="UpTown">UpTown</option>
+                </datalist>
+            </div>
+            <div>
+                <audio loop controls>
+                    <source src="/Venmegam-Pennaga.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div>
+                <video loop width="320" height="240" controls>
+                    <source src="/Ramdom_Lines_x264.mp4" type="video/mp4">
+                </video>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
