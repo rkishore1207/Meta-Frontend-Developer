@@ -81,3 +81,13 @@
     </label>
 </fieldset>
 ```
+> - **http://microsoft/profile**
+* `Action = "/login"` -> override the profile and redirects to login page.
+* `Action = "login"` -> append with the existing link and happening child routing.
+* GET method appends the **data** into the **url** and give it to the server and server extracts the data and return the response with *success or failure message*.
+* But it is not `so secure` and some browser & Server has **url length limitations** so these GET method should not be comfortable case for all the time.
+* Otherhand POST method fix the **data's to the body** the http request and give it to the server.
+---------------
+![Input texts](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/f701b460-251d-4641-ad42-302b8a76ea9a)
+![Input checkboxes](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/2efc859c-6fed-49e0-baad-6fbdba52ff44)
+* To avoid this we should point to every element and give common styles like <u>width and length = 100%</u>
