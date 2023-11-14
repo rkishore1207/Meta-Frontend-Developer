@@ -23,3 +23,29 @@ grid-template-columns: repeat(3,100px);
 grid-auto-rows: minmax(150px,auto);
 ```
 * Two commonly used grid frameworks are `12 and 16 columns` frameworks.
+# CSS Selectors
+1. Element Selector
+2. Class Selector
+3. Id Selector
+4. **Attribute Selector** -> by the attribute of one element we can point that particular element.
+```javascript
+<div class="https://localhost:5500" ></div>
+//Css
+div[class*="localhost"]{
+    color:green;
+}
+```
+5. **nth-of-type and nth-child** -> 
+```javascript
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
+//Css
+li:nth-of-type(2){
+    color:green;
+}
+```
+6. **Star Selector or Universal selector (*)** -> this properties will be applied to all the elements in the file.
+7. **Group Selector or Stacking Selector** -> with the selector we can group the elements together and reduce the code duplication.
