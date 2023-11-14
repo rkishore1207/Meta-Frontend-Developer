@@ -13,3 +13,13 @@
 * Absolute is `fixed` and Relative is `in relation` to the Parent.
 ![Absolute units in css](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/16449fe3-1b63-4088-86e3-e6aa6441c301)
 ![Relative units in css](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/3afd6b97-5f73-4de2-8e48-3ac14fdb00c4)
+-----------------
+* Default shorthand property is 0 1 auto.
+* **Fraction** is selectively divide the pages into **rows**.
+* `grid-gap or grid-gutter` -> represents the gap between items.
+* **grid-template-rows** is less effiecient that **grid-auto-rows**.
+```javascript
+grid-template-columns: repeat(3,100px);
+grid-auto-rows: minmax(150px,auto);
+```
+* Two commonly used grid frameworks are `12 and 16 columns` frameworks.
