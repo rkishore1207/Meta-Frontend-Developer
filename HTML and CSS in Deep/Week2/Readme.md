@@ -49,3 +49,12 @@ li:nth-of-type(2){
 ```
 6. **Star Selector or Universal selector (*)** -> this properties will be applied to all the elements in the file.
 7. **Group Selector or Stacking Selector** -> with the selector we can group the elements together and reduce the code duplication.
+## CSS Specificity
+* Id = 10;
+* class and elements = 1;
+```javascript
+p #bar => 1 element & 1 ID =>  0 1 0 1 => Score: 101
+p .foo => 1 element & 1 class => 0 0 1 1 => Score: 11
+p .p .foo => 1 element & 2 class =>  0 0 2 1 => Score: 21
+```
+* Specificity calculation => `Id+Class+Element`
