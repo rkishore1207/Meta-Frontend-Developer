@@ -63,3 +63,16 @@ p .p .foo => 1 element & 2 class =>  0 0 2 1 => Score: 21
 * **Child Selectors** -> selects only the immediate children. `(h2>p)`
 * **General Sibling** -> selects all the subsequent sibling tags. `(h2~p)`
 * **Adjacent Sibling** -> only select the next sibling tag. `(h2+p)`
+## Pseudo Selectors 
+1. :hover
+2. :active
+3. :focus
+## Form Selectors
+1. :valid and :invalid
+2. :enabled and :disabled -> especially for buttons
+3. :checked and :indeterminate -> check boxes
+## Specific position based states
+1. first-of-type
+2. last-of-type
+3. nth-of-type
+4. nth-last-of-type
