@@ -76,3 +76,47 @@ p .p .foo => 1 element & 2 class =>  0 0 2 1 => Score: 21
 2. last-of-type
 3. nth-of-type
 4. nth-last-of-type
+## Pseudo Elements
+* Pseudo elements have two colons in it.
+```javascript
+selector::name{
+    property:value;
+}
+//html
+<ul> 
+    <li>Based in Chicago, Illinois, Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. </li> 
+    <li>The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12–15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day.</li> 
+    <li>Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. To craft the menu, Mario relies on family recipes and his experience as a chef in Italy.</li> 
+</ul> 
+//CSS
+li::first-letter { 
+color:coral; 
+font-size: 1.3em; 
+font-weight: bold; 
+line-height: 1; 
+}
+
+li::first-line{
+
+}
+
+li::selection{
+    background:brown;
+    color:white;
+}
+
+li::marker{
+    color:red;
+    content:'<>';
+}
+
+li::befor{
+    content:'Kishore';
+    background-color:blue;
+}
+
+li::after{
+    content:'!!';
+    background-color:blue;
+}
+```
