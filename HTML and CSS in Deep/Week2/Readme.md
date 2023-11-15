@@ -58,3 +58,8 @@ p .foo => 1 element & 1 class => 0 0 1 1 => Score: 11
 p .p .foo => 1 element & 2 class =>  0 0 2 1 => Score: 21
 ```
 * Specificity calculation => `Id+Class+Element`
+## Combination Selectors
+* **Descendent Selectors** -> selects all the element nested inside the descendent element. `(h2 p)`
+* **Child Selectors** -> selects only the immediate children. `(h2>p)`
+* **General Sibling** -> selects all the subsequent sibling tags. `(h2~p)`
+* **Adjacent Sibling** -> only select the next sibling tag. `(h2+p)`
