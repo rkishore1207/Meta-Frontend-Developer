@@ -196,3 +196,11 @@ $margin: 20px;
     @include myFunction;
 }
 ```
+# Debugging
+1. Skill based Errors
+2. Rule based Errors
+3. Knowledge based Errors
+> - All the typos and syntax errors come under skill based, if we forgot to close the brackets, wrongly used quotation, etc.,
+> - always class name starts with character instead of that using of number is come under rule based.
+> - During working on complicated code base there occurs knowledge based errors.
+* `OverSpecificity` takes more time to render the page hence we should know how to use specificity.
