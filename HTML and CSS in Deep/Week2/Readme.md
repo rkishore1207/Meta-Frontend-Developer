@@ -174,3 +174,25 @@ li::placeholder{
     }
 }
 ```
+
+## SCSS (Saasy CSS)
+* That is declared the variables and assigned values to it and reused within the file.
+```javascript
+$font-color: red;
+$margin: 20px;
+
+@mixin myFunction{
+    color:red;
+    margin:20px;
+    padding:30px;
+}
+
+.letter{
+    font-color: $font-color;
+    margin: $margin;
+}
+
+.ball{
+    @include myFunction;
+}
+```
