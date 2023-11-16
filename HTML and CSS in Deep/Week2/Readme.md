@@ -204,3 +204,17 @@ $margin: 20px;
 > - always class name starts with character instead of that using of number is come under rule based.
 > - During working on complicated code base there occurs knowledge based errors.
 * `OverSpecificity` takes more time to render the page hence we should know how to use specificity.
+## Handling Errors
+* CSS is not like other programming language to be *down* while examine errors, instead of just **ingnoring** the line which was not able to understand in addition with the **whole selector**.
+* To see what the error message => **view->problems**
+* `.stylelinttrc.json` is the extension to write the rule that you should use this particular value to this property alone.
+* Then install the *StyleLint extensions* and go to the extension settings and find configure file, after enter the **.stylelinttrc.json** in it.
+```javascript
+{
+    "rules": {
+        "alpha-value-notation": "number",
+        "selector-type-case": "lower",
+        "color-no-hex": true
+    }
+}
+```
