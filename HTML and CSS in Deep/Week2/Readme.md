@@ -127,3 +127,26 @@ li::placeholder{
 ![Attribute Selectors](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/05fa057c-c210-4b23-92e4-623841932486)
 ## Web-link states
 * `Link->Visited->Hover->Active` **(LVHA)**
+
+# CSS Effects
+* To grab the **users attention** but it is **slow down** the page load.
+* `GIF` -> Graphic Interchange Form
+* `Flash` is one the effects but it needs a special engine for browser to handle this.
+    1. Hover Effects
+    2. Cursor Effects
+    3. Slide Shows
+    4. Video Backgrounds
+    5. Parallax
+    6. Back To the Top
+    7. Element and colour transitions
+    8. Full screen snapping
+## Text Effects
+### Text overflow
+```javascript
+.text{
+    white-space:nowrap;
+    text-overflow:ellipses;
+    text-overflow:clip;
+    writing-mode:vertical-rl;//to place the text vertical
+}
+```
