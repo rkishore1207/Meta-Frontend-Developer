@@ -150,3 +150,27 @@ li::placeholder{
     writing-mode:vertical-rl;//to place the text vertical
 }
 ```
+## Transform and Transition
+* To change the position of an element use transform and to execute this with some time use transition properties.
+```javascript
+.box:hover{
+    transform:rotateZ(60deg);
+    transition:2s;
+}
+```
+## Animations
+```javascript
+*{
+    animation:myAnimation 5s linear 4s infinite forwards;
+    //name duraion timing-function delay iteration-count fill-mode
+}
+
+@keyframes myAnimation{
+    from{
+        transform:rotateX(30deg);
+    }
+    to{
+        transform:rotateX(60deg);
+    }
+}
+```
