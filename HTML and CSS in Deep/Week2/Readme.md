@@ -119,4 +119,11 @@ li::after{
     content:'!!';
     background-color:blue;
 }
+
+li::placeholder{
+
+}
 ```
+![Attribute Selectors](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/05fa057c-c210-4b23-92e4-623841932486)
+## Web-link states
+* `Link->Visited->Hover->Active` **(LVHA)**
