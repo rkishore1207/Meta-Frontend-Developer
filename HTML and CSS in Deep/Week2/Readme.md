@@ -218,3 +218,15 @@ $margin: 20px;
     }
 }
 ```
+## Debugging errors
+* Frontend debugging needs *experience* rather than *knowlege*.
+* 1st we need to **isolate the elements** that are involved and identify the **parents and child relations**.
+* Or else we could move one element to another place and examine the changes occur on both the places, these **comparison** helps us to understand the *source of the error*.
+* We should conscious about the **Box-model**.
+* Besides, browser itself have one CSS file named as `user-agent.css`, sometimes these styles may apply on our elements, so to avoid these use **star selector**.
+## UI Testing
+1. Automated user acceptance testing
+2. Cross-device testing
+3. Visual regression testing
+> - Cross device testing is ensure that our application is behave same in all devices and maintain consistent user experience.
+
