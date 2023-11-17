@@ -127,3 +127,106 @@ li::placeholder{
 ![Attribute Selectors](https://github.com/rkishore1207/Meta-Frontend-Developer/assets/146698138/05fa057c-c210-4b23-92e4-623841932486)
 ## Web-link states
 * `Link->Visited->Hover->Active` **(LVHA)**
+
+# CSS Effects
+* To grab the **users attention** but it is **slow down** the page load.
+* `GIF` -> Graphic Interchange Form
+* `Flash` is one the effects but it needs a special engine for browser to handle this.
+    1. Hover Effects
+    2. Cursor Effects
+    3. Slide Shows
+    4. Video Backgrounds
+    5. Parallax
+    6. Back To the Top
+    7. Element and colour transitions
+    8. Full screen snapping
+## Text Effects
+### Text overflow
+```javascript
+.text{
+    white-space:nowrap;
+    text-overflow:ellipses;
+    text-overflow:clip;
+    writing-mode:vertical-rl;//to place the text vertical
+}
+```
+## Transform and Transition
+* To change the position of an element use transform and to execute this with some time use transition properties.
+```javascript
+.box:hover{
+    transform:rotateZ(60deg);
+    transition:2s;
+}
+```
+## Animations
+```javascript
+*{
+    animation:myAnimation 5s linear 4s infinite forwards;
+    //name duraion timing-function delay iteration-count fill-mode
+}
+
+@keyframes myAnimation{
+    from{
+        transform:rotateX(30deg);
+    }
+    to{
+        transform:rotateX(60deg);
+    }
+}
+```
+
+## SCSS (Saasy CSS)
+* That is declared the variables and assigned values to it and reused within the file.
+```javascript
+$font-color: red;
+$margin: 20px;
+
+@mixin myFunction{
+    color:red;
+    margin:20px;
+    padding:30px;
+}
+
+.letter{
+    font-color: $font-color;
+    margin: $margin;
+}
+
+.ball{
+    @include myFunction;
+}
+```
+# Debugging
+1. Skill based Errors
+2. Rule based Errors
+3. Knowledge based Errors
+> - All the typos and syntax errors come under skill based, if we forgot to close the brackets, wrongly used quotation, etc.,
+> - always class name starts with character instead of that using of number is come under rule based.
+> - During working on complicated code base there occurs knowledge based errors.
+* `OverSpecificity` takes more time to render the page hence we should know how to use specificity.
+## Handling Errors
+* CSS is not like other programming language to be *down* while examine errors, instead of just **ingnoring** the line which was not able to understand in addition with the **whole selector**.
+* To see what the error message => **view->problems**
+* `.stylelinttrc.json` is the extension to write the rule that you should use this particular value to this property alone.
+* Then install the *StyleLint extensions* and go to the extension settings and find configure file, after enter the **.stylelinttrc.json** in it.
+```javascript
+{
+    "rules": {
+        "alpha-value-notation": "number",
+        "selector-type-case": "lower",
+        "color-no-hex": true
+    }
+}
+```
+## Debugging errors
+* Frontend debugging needs *experience* rather than *knowlege*.
+* 1st we need to **isolate the elements** that are involved and identify the **parents and child relations**.
+* Or else we could move one element to another place and examine the changes occur on both the places, these **comparison** helps us to understand the *source of the error*.
+* We should conscious about the **Box-model**.
+* Besides, browser itself have one CSS file named as `user-agent.css`, sometimes these styles may apply on our elements, so to avoid these use **star selector**.
+## UI Testing
+1. Automated user acceptance testing
+2. Cross-device testing
+3. Visual regression testing
+> - Cross device testing is ensure that our application is behave same in all devices and maintain consistent user experience.
+
